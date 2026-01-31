@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Customer Support Agent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #eef2ff, #f8fafc);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 80%;
+      max-width: 800px;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #6a4cff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 15px;
+      background: #f1f3ff;
+      border-left: 5px solid #6a4cff;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>AI Customer Support Agent</h1>
+    <p>
+      This AI assistant provides personalized customer support using long-term memory.
+      It remembers past issues and improves responses over time.
+    </p>
+
+    <div class="note">
+      💡 Try chatting with the assistant in the bottom-right corner.
+    </div>
+  </div>
+
+  <!-- Memoryly Chat Widget -->
+  <script>
+    window.accID = '129';
+    window.agentID = 'dbe46e25679443619b545847615cd81b';
+    window.buildType = 'cp-prod';
+
+    (function () {
+      var script = document.createElement("script");
+      script.src =
+        "https://firebasestorage.googleapis.com/v0/b/nit-dgp-9bc0f.appspot.com/o/chat-loader.js?alt=media";
+      script.async = true;
+      document.body.appendChild(script);
+    })();
+  </script>
+
+</body>
+</html>
